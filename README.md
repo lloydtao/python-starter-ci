@@ -16,5 +16,7 @@ Clone this repository (or [use it as a template](https://github.com/LloydTao/pyt
 
 ![Location of 'use this template' button](docs/readme/template-button.png)
 
-It's that simple! GitHub Actions implements Infrastructure as Code (IaC) principles, and picks up anything from `.github/workflows/*.yml`.
+It's that simple!
+
+GitHub Actions implements the Infrastructure as Code (IaC) principle, and picks up anything from `.github/workflows/*.yml`.
 
