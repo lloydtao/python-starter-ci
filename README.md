@@ -20,3 +20,43 @@ It's that simple!
 
 GitHub Actions implements the Infrastructure as Code (IaC) principle, and picks up anything from `.github/workflows/*.yml`.
 
+## Usage
+
+### Linting
+
+Lint your project using `black .`
+
+![Location of 'use this template' button](docs/readme/black-lint.png)
+
+### Testing
+
+Run your tests using `coverage run -m pytest`
+
+![Location of 'use this template' button](docs/readme/coverage-run.png)
+
+Output the test report using `coverage report -m`
+
+![Location of 'use this template' button](docs/readme/coverage-report.png)
+
+### GitHub Actions
+
+After launching a pull request, a GitHub Actions [workflow](https://github.com/LloydTao/python-starter-ci/blob/main/.github/workflows/ci-project.yml) is launched.
+
+This will lint and test the project across Python 3.6 and 3.9, on MacOS, Ubuntu and Windows.
+
+You can easily change the operating systems and Python versions within the pipeline's strategy matrix.
+
+```yml
+strategy:
+  matrix:
+    os:
+      - ubuntu-latest
+      - macos-latest
+      - windows-latest
+    python-version:
+      - 3.6
+      - 3.9
+```
+
+Of course, any part of this pipeline can be edited.
+
