@@ -4,7 +4,11 @@ A Python project template with GitHub Actions pipelines included.
 
 ## Introduction
 
-This starter kit includes a GitHub Actions pipeline to lint and test the project within pull requests. This is an application of [Continuous Integration](https://www.atlassian.com/continuous-delivery/continuous-integration) (CI).
+This starter kit includes a GitHub Actions workflow to lint and test the project within pull requests.
+
+This is an application of [Continuous Integration](https://www.atlassian.com/continuous-delivery/continuous-integration) (CI).
+
+![Pipeline results in pull request](docs/readme/ci-checks.png)
 
 ## Installation
 
